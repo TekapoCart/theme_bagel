@@ -1,0 +1,41 @@
+#home-featuredproducts {
+  position: relative;
+  background-color: #f5f5f5;
+
+  .left, .right {
+    position: absolute;
+    top: 120px;
+    display: none;
+    z-index: $control-z-index;
+  }
+  .right {
+    top: 110px;
+  }
+
+  .listing {
+    height: $square-length;
+    visibility: hidden;
+
+    article {
+      position: relative;
+      float: left;
+      width: $square-length;
+      height: $square-length;
+      background: #fff;
+      text-align: center;
+      h3 {
+        position: absolute;
+        width: $square-length;
+        top: 260px;
+        font-size: $smaller-font-size;
+        color: $primary-color;
+      }
+      img {
+        width: 100%;
+      }
+      .overlay {
+        display: none;
+      }
+    }
+  }
+}

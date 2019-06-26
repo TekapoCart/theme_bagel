@@ -1,0 +1,282 @@
+html {
+  font: initial;
+  font-family: $primary-font-family;
+  font-size: $primary-font-size;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #4c4c4c;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $nav-hover-color;
+  }
+}
+
+body {
+  animation: fadein 2s;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-link-color;
+}
+
+a:hover {
+  color: $primary-hover-color;
+}
+
+strong {
+  font-family: $bold-font-family;
+}
+
+p, pre {
+  color: #999;
+}
+
+.grey {
+  background-color: #f8f8f8;
+}
+
+.error {
+  color: red;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* parent theme hack */
+
+.dropdown-item {
+  color: $primary-color;
+  padding: 3px 1.5rem;
+}
+
+#_desktop_top_menu .top-menu .current > a {
+  color: inherit;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  font-weight: 700;
+}
+
+#blockcart-modal .modal-body {
+  background: $primary-background;
+}
+
+#blockcart-modal .modal-body p {
+  margin-bottom: 16px;
+}
+
+.product-quantity #quantity_wanted {
+  height: 35px;
+}
+
+.bootstrap-touchspin input.form-control,
+.bootstrap-touchspin input.input-group {
+  height: 34px;
+}
+
+.product-prices {
+  div {
+    margin-bottom: 0;
+    &.current-price {
+      color: #fff;
+      font-size: $h1-font-size;
+    }
+  }
+}
+
+.social-sharing {
+  margin-top: 0;
+}
+
+.product-actions .add-to-cart {
+  .material-icons {
+    font-size: 20px;
+  }
+}
+
+.btn-primary {
+  &:hover, &.focus {
+    color: $primary-hover-color;
+    background-color: $primary-link-color;
+  }
+  &:disabled {
+    &:hover, &.focus {
+      color: #fff;
+    }
+  }
+}
+
+body#checkout section.checkout-step,
+.card,
+.box,
+.page-footer {
+  p, ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.account-link, .page-footer a {
+  &:hover {
+    color: $primary-hover-color;
+  }
+}
+
+.page-my-account #content .links a {
+  &:hover {
+    color: $primary-hover-color;
+    i {
+      color: $primary-hover-color;
+    }
+  }
+}
+
+#my-account .row {
+  margin-left: -12px;
+}
+
+.cms-category-desc {
+  margin-bottom: 20px;
+}
+
+#cms {
+  .cms-page-list li {
+    padding: 0;
+    width: initial;
+  }
+}
+@media (max-width: 767px) {
+  #cms {
+    .cms-page-list li {
+      margin-left: -25px;
+      margin-right: -25px;
+      text-align: center;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+  a {
+    font-size: 15px;
+    line-height: 1.5;
+
+    &:not(.previous):not(.next) {
+      padding-right: 5px;
+      padding-left: 4px;
+    }
+  }
+  .col-md-5 {
+    padding-left: 24px;
+  }
+}
+
+#contact h3 {
+  display: none;
+}
+
+#pagenotfound {
+  #layout-left-column-main {
+    padding-bottom: 10px;
+    background: #000;
+  }
+  .image-wrapper {
+    margin: 0;
+    position: relative;
+    background: $primary-color;
+    img {
+      width: 95%;
+      max-width: 375px;
+    }
+    h1 {
+      position: absolute;
+      left: 0;
+      bottom: 80px;
+      font-size: 50px;
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+    }
+    div {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      font-size: 12px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #pagenotfound #layout-left-column-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#main .page-header {
+  padding-top: 1rem;
+}
+
+#footer {
+
+  margin-top: 30px;
+  background: $footer-background;
+  position: relative;
+
+  .links, .copyright {
+    opacity: 0.6;
+  }
+
+  .back-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    span {
+      display: inline-block;
+      background: $social-icon-color;
+      .material-icons {
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+    &:hover {
+      span {
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+
+
+#index {
+  #footer {
+    display: none;
+  }
+}
+
+.copyright {
+  padding-left: 25px;
+  opacity: 1;
+  line-height: 1.3;
+}

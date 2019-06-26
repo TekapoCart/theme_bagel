@@ -1,0 +1,1 @@
+{extends file='layouts/layout-both-columns.tpl'}

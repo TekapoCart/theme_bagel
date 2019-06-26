@@ -1,0 +1,42 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 25px;
+  .link-block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    width: $square-length;
+    h3 {
+      font-size: $nav-font-size;
+      padding-bottom: 6px;
+    }
+    ul {
+      top: 0;
+      right: 150px;
+      li {
+        a {
+          display: block;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          color: $footer-link-color;
+          &:hover {
+            color: $primary-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .links {
+    flex-wrap: wrap;
+    .link-block {
+      width: 50%;
+    }
+  }
+}

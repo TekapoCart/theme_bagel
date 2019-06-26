@@ -1,0 +1,18 @@
+@mixin hover-effect-before {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+@mixin hover-effect-after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@mixin blinker {
+  animation: blink 1s 1 cubic-bezier(.165, .84, .44, 1);
+}

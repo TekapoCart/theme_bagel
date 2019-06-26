@@ -1,0 +1,364 @@
+.squares article, .square {
+  position: relative;
+  float: left;
+  width: $square-length;
+  height: $square-length;
+  text-align: center;
+  background-color: $primary-background;
+  &.intro, &.detail, &.action {
+    text-align: left;
+    line-height: 17px;
+    font-size: $smaller-font-size;
+  }
+  &.intro, &.detail {
+    #crumb, h1, .product-reference, .caption, .spec, .product-prices, .product-actions {
+      margin-left: 26px;
+    }
+    .spec, .caption, .summary {
+      margin-top: 20px;
+    }
+  }
+  &.intro {
+    margin-top: $square-length;
+    .description {
+      max-height: calc(#{$square-length} - 110px);
+    }
+  }
+  &.detail {
+    .description {
+      max-height: calc(#{$square-length} - 60px);
+    }
+  }
+  &.action {
+    padding-left: 26px;
+  }
+  &.lead {
+    font-family: $bold-font-family;
+    text-transform: $text-transform;
+  }
+  &.dark {
+    color: #999;
+    background-color: $dark-square-background;
+    .highlight {
+      color: #fff;
+      text-transform: $text-transform;
+    }
+  }
+  &.border-top {
+    border-top: 1px solid #333;
+  }
+  &.border-right {
+    border-right: 1px solid #333;
+  }
+  h1 {
+    font-size: $h1-font-size;
+    font-family: $bold-font-family;
+    padding: 18px 0 15px 0;
+    text-transform: $text-transform;
+  }
+  h2 {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    font-size: $h2-font-size;
+    font-family: $bold-font-family;
+    color: #fff;
+  }
+  h3 {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    font-size: $smaller-font-size;
+    text-transform: $text-transform;
+  }
+  h4 {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    font-size: 12px;
+  }
+  h5 {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    font-size: $xxlarge-font-size;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  #crumb {
+    padding-top: 15px;
+    font-size: $smaller-font-size;
+    text-transform: $text-transform;
+    li {
+      display: inline-block;
+      a:hover {
+        span {
+          color: $primary-hover-color;
+        }
+      }
+    }
+    span {
+      color: #999;
+    }
+  }
+  .caption, .spec .title {
+    font-family: $bold-font-family;
+    &:after {
+      content: ':';
+    }
+  }
+  .description {
+    overflow-y: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    p {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &::-webkit-scrollbar {
+      width: 1px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #4c4c4c;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-hover-color;
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlay-background;
+    opacity: 0;
+    transition: opacity 0.5s;
+    span {
+      position: absolute;
+      top: 39%;
+      left: 39%;
+      padding: 25px 11px;
+      border-radius: 100px;
+      background: #fff;
+      color: $overlay-background;
+      text-transform: $text-transform;
+      font-weight: 700;
+    }
+    &.info {
+      background: $overlay-info-background;
+      span {
+        left: 40.7%;
+        padding: 22px 12px;
+        color: $overlay-info-background;
+      }
+    }
+    &.on {
+      opacity: 1;
+    }
+  }
+  a {
+    &:hover {
+      h2 {
+        top: 265px;
+        font-size: $smaller-font-size;
+      }
+      h3 {
+        color: $primary-color;
+      }
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#cms {
+  .squares article, .square {
+    a {
+      display: block;
+      &:hover {
+        img {
+          opacity: 0.6;
+        }
+        background: $overlay-background;
+      }
+    }
+  }
+}
+
+.product-miniature {
+  margin: 0;
+  padding: 0;
+  img {
+    width: initial;
+    height: initial;
+  }
+  .sticker {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  &.mobile-1, &.mobile-2, &.mobile-3,
+  &.desktop-3, &.desktop-4, &.desktop-5, &.desktop-6 {
+    margin: 0;
+    padding: 0;
+    img {
+      width: initial;
+      height: initial;
+    }
+    .sticker {
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.featured-products, #products {
+  .product-miniature .sticker {
+    z-index: 0;
+  }
+}
+
+#home-featuredproducts {
+  .product-miniature {
+    .sticker {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .squares {
+    min-height: calc(#{$square-length} * 2);
+  }
+  .squares article, .square {
+    &.cms {
+      a {
+        width: $square-length;
+        height: $square-length;
+      }
+    }
+  }
+  #cms {
+    .squares article, .square {
+      a {
+        width: $square-length;
+        height: $square-length;
+      }
+    }
+  }
+  .product-miniature {
+    .sticker {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .product-miniature {
+    .sticker {
+      width: 72px;
+      height: 72px;
+    }
+    &.desktop-3, &.desktop-4, &.desktop-5, &.desktop-6 {
+      .sticker {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .squares {
+    min-height: $square-length;
+  }
+  .squares article, .square {
+    width: 50vw;
+    height: 50vw;
+    &.mobile-1 {
+      width: 100vw;
+      height: 100vw;
+    }
+    &.mobile-3 {
+      width: 33vw;
+      height: 33vw;
+    }
+    &.intro {
+      margin-top: 100vw;
+      .description {
+        max-height: calc(50vh - 110px);
+      }
+    }
+    &.detail {
+      .description {
+        max-height: calc(50vh - 60px);
+      }
+    }
+    &.intro, &.detail {
+      width: 100vw;
+      height: 50vh;
+    }
+    h5 {
+      font-size: $xxlarge-font-size-mobile;
+    }
+    .overlay {
+      span {
+        top: 34%;
+        left: 34%;
+      }
+    }
+    &.mobile-1 {
+      .overlay {
+        span {
+          top: 41%;
+          left: 41%;
+        }
+      }
+    }
+    &.mobile-3 {
+      .overlay {
+        span {
+          top: 30%;
+          left: 30%;
+          font-size: 12px;
+          padding: 20px 8px;
+        }
+      }
+    }
+  }
+  #cms {
+    .squares article, .square {
+      a {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+  }
+  .product-miniature {
+    .sticker {
+      width: 45px;
+      height: 45px;
+    }
+    &.mobile-1 {
+      .sticker {
+        width: 72px;
+        height: 72px;
+      }
+    }
+    &.mobile-3 {
+      .sticker {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .product-miniature {
+    zoom: 1;
+  }
+}

@@ -1,0 +1,66 @@
+/* purple
+$palette-color: rgba(168, 71, 226, 1);
+$palette-background: rgba(168, 71, 226, 0.7);
+*/
+
+/* red */
+$palette-color: rgba(231, 19, 92, 1);
+$palette-background: rgba(231, 19, 92, 0.7);
+
+/* yellow
+$palette-color: rgba(255, 252, 100, 1);
+$palette-background: rgba(255, 252, 100, 0.7);
+*/
+
+/* green
+$palette-color: rgba(100, 255, 157, 1);
+$palette-background: rgba(100, 255, 157, 0.7);
+*/
+
+/* layout */
+$square-unit-length: 30px;
+$square-length: 300px;
+$mobile-left-spacing: 25px;
+
+/* font */
+$primary-font-family: MyFont;
+$bold-font-family: MyFontBold;
+$thin-font-family: MyFontThin;
+
+$smaller-font-size: 12px;
+$primary-font-size: 13px;
+$nav-font-size: 15px;
+$subnav-font-size: 12px;
+$h1-font-size: 18px;
+$h2-font-size: 34px;
+$xxlarge-font-size: 46px;
+$xxlarge-font-size-mobile: 23px;
+
+$text-transform: uppercase; /* [lowercase|uppercase|capitalize] */
+
+/* text color */
+$primary-color: #000;
+$social-icon-color: #cfcfcf;
+
+/* link color */
+$primary-link-color: #000;
+$primary-hover-color: $palette-color;
+$primary-disabled-hover-color: #7a7a7a;
+$nav-hover-color: $palette-color;
+$icon-hover-color: $palette-color;
+$footer-link-color: #555;
+
+/* background color */
+$primary-background: #fff;
+$nav-background: #fff;
+$overlay-background: $palette-background;
+$overlay-info-background: rgba(0, 0, 0, 0.7);
+$dark-square-background: #000;
+$footer-background: rgba(242, 242, 242, 0.6);
+
+
+/* z-index */
+$nav-z-index: 100;
+$control-z-index: 150;
+
+$nav-opacity: 0.9;

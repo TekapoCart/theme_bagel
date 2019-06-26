@@ -1,0 +1,76 @@
+parent: simplicity
+name: theme_bauhaus
+display_name: theme bauhaus
+version: 1.0.0
+assets:
+  use_parent_assets: true
+  js:
+    all:
+      - id: jquery-cycle2
+        path: assets/js/jquery.cycle2.js
+        priority: 500
+        position: bottom
+    index:
+      - id: jquery-cycle2-carousel
+        path: assets/js/jquery.cycle2.carousel.min.js
+        priority: 500
+        attribute: bottom
+    product:
+      - id: product-custom
+        path: assets/js/product.js
+        priority: 500
+        attribute: bottom
+
+global_settings:
+  hooks:
+    modules_to_hook:
+      displayBanner:
+        - simplicity_headerbar
+      displayNav1:
+        - simplicity_logo
+        - ps_mainmenu
+      displayNav2:
+        - ps_languageselector
+        - ps_currencyselector
+        - ps_customersignin
+        - ps_shoppingcart
+      displayTop:
+        - ps_socialfollow
+        - ps_customtext
+      displayHome:
+        - ps_banner
+        - ps_featuredproducts
+        - ps_imageslider
+  image_types:
+    small_default:
+      width: 500
+      height: 500
+      scope: [products, categories]
+    home_default:
+      width: 500
+      height: 500
+      scope: [products]
+    large_default:
+      width: 2430
+      height: 900
+      scope: [products]
+    cart_default:
+      width: 300
+      height: 300
+      scope: []
+    medium_default:
+      width: 500
+      height: 500
+      scope: []
+    category_default:
+      width: 2430
+      height: 900
+      scope: [categories]
+
+theme_settings:
+  default_layout: layout-left-column
+  layouts:
+    index: layout-full-width
+    product: layout-full-width
+    category: layout-full-width
+    cms: layout-full-width

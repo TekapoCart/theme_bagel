@@ -1,0 +1,108 @@
+.figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  display: block;
+  transition: opacity 0.5s;
+  .left, .right {
+    position: absolute;
+    z-index: $control-z-index;
+  }
+  .left {
+    margin-top: -10px;
+  }
+  .right {
+    margin-top: -20px;
+  }
+
+  .pager {
+    position: absolute;
+    font-size: $xxlarge-font-size;
+    font-family: $thin-font-family;
+    z-index: $control-z-index;
+  }
+}
+
+@media (min-width : 768px ) {
+  .figures {
+    float: left;
+    position: relative;
+    width: calc(100% - #{$square-length});
+    height: calc(2 * #{$square-length});
+  }
+  .figure {
+    width: 100%;
+    height: calc(2 * #{$square-length});
+    .left, .right {
+      top: 50%;
+    }
+    .left {
+      left: 20px;
+    }
+    .right {
+      right: 50px;
+    }
+    .pager {
+      right: 45px;
+      bottom: 27px;
+    }
+  }
+}
+
+/* 箭頭＆頁碼：iPad 和手機版相同（置底） */
+@media (min-width : 768px ) and (max-width : 991px ) {
+  .figure {
+    .left, .right {
+      position: absolute;
+      top: initial;
+      img {
+        width: 30px;
+      }
+    }
+    .left {
+      left: -16px;
+      bottom: 15px;
+    }
+    .right {
+      right: -17px;
+      bottom: -10px;
+    }
+    .pager {
+      right: 43%;
+      bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .figures {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+  }
+  .figure {
+    width: 100vw;
+    height: 100vw;
+    .left, .right {
+      img {
+        width: 30px;
+      }
+    }
+    .left {
+      left: -16px;
+      bottom: 15px;
+    }
+    .right {
+      right: -17px;
+      bottom: -10px;
+    }
+    .pager {
+      right: 43%;
+      bottom: 15px;
+    }
+  }
+}

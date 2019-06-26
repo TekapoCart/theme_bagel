@@ -1,0 +1,51 @@
+.chevron {
+  display: block;
+  img, svg {
+    width: 100%;
+  }
+  &.left, &.right {
+    width: 65px;
+    height: 65px;
+    img {
+      padding: 5px 0;
+      opacity: 0.2;
+    }
+  }
+  &.up, &.down {
+    width: 30px;
+    height: 30px;
+    img, svg {
+      padding: 8px;
+
+    }
+    .fill {
+      fill: #000;
+      opacity: 0.3;
+    }
+    &:hover {
+      background-color: #fff;
+      .fill {
+        opacity: 1;
+      }
+    }
+  }
+  &.bgcolor {
+    img {
+      &:hover {
+        background-color: $social-icon-color;
+      }
+    }
+  }
+  &.up {
+    transform: rotate(270deg);
+  }
+  &.left {
+    transform: rotate(180deg);
+  }
+  &.down {
+    transform: rotate(90deg);
+  }
+  &.disabled {
+    opacity: 0;
+  }
+}
