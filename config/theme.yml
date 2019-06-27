@@ -25,6 +25,7 @@ global_settings:
   configuration:
     PS_IMAGE_GENERATION_METHOD: 0
     SIMPLICITY_IMAGE_USE_CROP: 1
+    SIMPLICITY_IMAGICK: 1
   hooks:
     modules_to_hook:
       displayBanner:
