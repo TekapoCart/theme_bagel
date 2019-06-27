@@ -25,7 +25,7 @@ global_settings:
   configuration:
     PS_IMAGE_GENERATION_METHOD: 0
     SIMPLICITY_IMAGE_USE_CROP: 1
-    SIMPLICITY_IMAGICK: 0
+    SIMPLICITY_IMAGICK: 1
   hooks:
     modules_to_hook:
       displayBanner:
@@ -46,7 +46,7 @@ global_settings:
         - ps_featuredproducts
         - ps_imageslider
       displayFooterBefore:
-        - ps_socialfollow
+        - ps_emailsubscription
   image_types:
     small_default:
       width: 500
