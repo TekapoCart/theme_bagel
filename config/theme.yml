@@ -45,6 +45,8 @@ global_settings:
         - ps_banner
         - ps_featuredproducts
         - ps_imageslider
+      displayFooterBefore:
+        - ps_socialfollow
   image_types:
     small_default:
       width: 500
