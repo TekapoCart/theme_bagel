@@ -1,5 +1,7 @@
 @media (min-width : 768px ) {
-  #layout-left-column-main, #cms #main {
+  #layout-left-column-main,
+  #cms #main,
+  #contact #main {
     width: calc(100% - 300px - 60px);
     margin-left: 300px;
     margin-right: 60px;
@@ -7,7 +9,9 @@
 }
 
 @media (max-width: 767px) {
-  #layout-left-column-main, #cms #main {
+  #layout-left-column-main,
+  #cms #main,
+  #contact #main {
     margin-left: $mobile-left-spacing;
     margin-right: $mobile-left-spacing;
   }

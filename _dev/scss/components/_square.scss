@@ -239,7 +239,7 @@
   }
   .squares article, .square {
     a {
-      &:hover {
+      &:active {
         h2 {
           top: 265px;
           font-size: $smaller-font-size;
@@ -318,7 +318,7 @@
     }
     &.detail {
       .description {
-        max-height: calc(50vh - 60px);
+        max-height: calc(50vh - 150px);
       }
     }
     &.intro, &.detail {
