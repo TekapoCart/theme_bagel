@@ -1,3 +1,4 @@
+<div class="clearfix"></div>
 <div class="links">
     {foreach $linkBlocks as $linkBlock}
         <div class="link-block">

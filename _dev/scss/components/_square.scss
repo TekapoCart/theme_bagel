@@ -26,7 +26,7 @@
   }
   &.detail {
     .description {
-      max-height: calc(#{$square-length} - 60px);
+      max-height: calc(#{$square-length} - 150px);
     }
   }
   &.action {
@@ -109,6 +109,16 @@
       content: ':';
     }
   }
+  .spec {
+    dl {
+      display: flex;
+      flex-direction: row;
+      dd {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
   .description {
     overflow-y: scroll;
     margin-left: 10px;
@@ -117,6 +127,12 @@
     p {
       padding-left: 16px;
       padding-right: 16px;
+      a {
+        color: $primary-background;
+        &:hover {
+          color: $primary-hover-color;
+        }
+      }
     }
     &::-webkit-scrollbar {
       width: 1px;
@@ -158,20 +174,6 @@
     }
     &.on {
       opacity: 1;
-    }
-  }
-  a {
-    &:hover {
-      h2 {
-        top: 265px;
-        font-size: $smaller-font-size;
-      }
-      h3 {
-        color: $primary-color;
-      }
-      .overlay {
-        opacity: 1;
-      }
     }
   }
 }
@@ -236,10 +238,18 @@
     min-height: calc(#{$square-length} * 2);
   }
   .squares article, .square {
-    &.cms {
-      a {
-        width: $square-length;
-        height: $square-length;
+    a {
+      &:hover {
+        h2 {
+          top: 265px;
+          font-size: $smaller-font-size;
+        }
+        h3 {
+          color: $primary-color;
+        }
+        .overlay {
+          opacity: 1;
+        }
       }
     }
   }
@@ -278,6 +288,20 @@
   .squares article, .square {
     width: 50vw;
     height: 50vw;
+    a {
+      &:focus {
+        h2 {
+          top: 265px;
+          font-size: $smaller-font-size;
+        }
+        h3 {
+          color: $primary-color;
+        }
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
     &.mobile-1 {
       width: 100vw;
       height: 100vw;

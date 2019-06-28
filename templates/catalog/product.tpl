@@ -108,14 +108,16 @@
                 {block name='product_features'}
                     {if $product.grouped_features}
                         {foreach from=$product.grouped_features item=feature}
-                            <span class="title highlight">{$feature.name}</span>
-                            {$feature.value|escape:'htmlall'|nl2br nofilter}
-                            <br>
+                            <dl>
+                                <dt class="title highlight">{$feature.name}</dt>
+                                <dd>{$feature.value|escape:'htmlall'|nl2br nofilter}</dd>
+                            </dl>
                         {/foreach}
                     {/if}
                 {/block}
             </div>
 
+            {if $product.description}
             <div class="caption highlight">DESCRIPTION</div>
             <div class="description">
                 {block name='product_description'}
@@ -123,6 +125,7 @@
                 {/block}
                 <div>&nbsp;</div>
             </div>
+            {/if}
         </div><!-- end of square detail -->
 
         <div class="squares">
