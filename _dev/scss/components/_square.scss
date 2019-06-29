@@ -59,10 +59,13 @@
   h2 {
     position: absolute;
     width: 100%;
+    padding: 0 5%;
     top: 45%;
     font-size: $h2-font-size;
+    text-transform: $text-transform;
     font-family: $bold-font-family;
     color: #fff;
+    z-index: 1;
   }
   h3 {
     position: absolute;
@@ -86,6 +89,9 @@
   img {
     width: 100%;
     height: auto;
+    &.dark {
+      filter: brightness(70%);
+    }
   }
   #crumb {
     padding-top: 15px;
@@ -207,7 +213,7 @@
   }
 }
 
-.featured-products, #products {
+.featured-products, #products, .product-miniature {
   .product-miniature .sticker {
     z-index: 0;
   }
@@ -284,13 +290,13 @@
     width: 50vw;
     height: 50vw;
     a {
+      h3 {
+        color: $primary-color;
+      }
       &:active, &:focus {
         h2 {
-          top: 265px;
+          top: 85%;
           font-size: $smaller-font-size;
-        }
-        h3 {
-          color: $primary-color;
         }
         .overlay {
           opacity: 1;
@@ -319,6 +325,9 @@
     &.intro, &.detail {
       width: 100vw;
       height: 50vh;
+    }
+    h2 {
+      font-size: $xxlarge-font-size-mobile;
     }
     h5 {
       font-size: $xxlarge-font-size-mobile;

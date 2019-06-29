@@ -8,7 +8,7 @@
                     <article>
                         <a href="{$subcategory.url}">
                             <h2 class="highlight">{$subcategory.name|truncate:25:'...'|escape:'html':'UTF-8'}</h2>
-                            <img src="{$subcategory.image.small.url}" width="300" height="300">
+                            <img src="{$subcategory.image.small.url}" width="300" height="300" class="dark">
                             <div class="overlay"><span>more</span></div>
                         </a>
                     </article>

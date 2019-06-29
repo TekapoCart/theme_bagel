@@ -128,7 +128,7 @@
             {/if}
         </div><!-- end of square detail -->
 
-        <div class="squares">
+        <div class="squares product-miniature">
             {block name='product_footer'}
                 {hook h='displayFooterProduct' product=$product category=$category}
             {/block}
