@@ -222,9 +222,6 @@
 }
 
 @media (min-width: 768px) {
-  .squares {
-    min-height: calc(#{$square-length} * 2);
-  }
   .squares article, .square {
     a {
       &:hover {
@@ -283,9 +280,6 @@
 }
 
 @media (max-width: 767px) {
-  .squares {
-    min-height: $square-length;
-  }
   .squares article, .square {
     width: 50vw;
     height: 50vw;

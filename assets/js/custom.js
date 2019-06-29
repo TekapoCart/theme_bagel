@@ -174,6 +174,16 @@ var featuredProductsCount,
     backTop = function() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+    },
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    resizeFooterPos = function() {
+        $('#footer').css('visibility', 'hidden').removeClass('sticky');
+        if ($('#footer').offset().top + $('#footer').height()  < $(window).height()) {
+            $('#footer').addClass('sticky');
+        }
+        $('#footer').css('visibility', 'visible');
     };
 
 $(function() {
@@ -216,6 +226,10 @@ $(function() {
 
     //
     $('#greetingDialog').modal();
+
+    // footer
+    resizeFooterPos();
+    $(window).resize(resizeFooterPos).trigger("resize");
 
 
 });

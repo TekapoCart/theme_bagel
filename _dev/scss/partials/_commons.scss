@@ -161,14 +161,6 @@ body#checkout section.checkout-step,
   }
 }
 
-@media (min-width: 768px) {
-  #cms, #contact {
-    #content {
-      min-height: 600px;
-    }
-  }
-}
-
 @media (max-width: 767px) {
   #cms {
     .cms-page-list li {
@@ -285,6 +277,17 @@ body#checkout section.checkout-step,
       }
     }
   }
+
+  &.sticky {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+#footer {
+  visibility: hidden;
 }
 
 #index {
