@@ -287,8 +287,6 @@ body#checkout section.checkout-step,
   }
 }
 
-
-
 #index {
   #footer {
     display: none;
@@ -308,3 +306,11 @@ body#checkout section.checkout-step,
   }
 }
 
+#cms {
+  #content {
+    p, ul, ol, blockquote {
+      line-height: $article-line-height;
+      letter-spacing: $article-letter-spacing;
+    }
+  }
+}
