@@ -40,6 +40,7 @@
 
 {hook h="displayWrapperBottom"}
 
+<div class="clearfix"></div>
 <footer id="footer">
     {block name="footer"}
         {include file="_partials/footer.tpl"}

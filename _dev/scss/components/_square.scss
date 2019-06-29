@@ -178,20 +178,6 @@
   }
 }
 
-#cms {
-  .squares article, .square {
-    a {
-      display: block;
-      &:hover {
-        img {
-          opacity: 0.6;
-        }
-        background: $overlay-background;
-      }
-    }
-  }
-}
-
 .product-miniature {
   margin: 0;
   padding: 0;
@@ -239,7 +225,7 @@
   }
   .squares article, .square {
     a {
-      &:active {
+      &:hover {
         h2 {
           top: 265px;
           font-size: $smaller-font-size;
@@ -250,14 +236,6 @@
         .overlay {
           opacity: 1;
         }
-      }
-    }
-  }
-  #cms {
-    .squares article, .square {
-      a {
-        width: $square-length;
-        height: $square-length;
       }
     }
   }
@@ -279,6 +257,27 @@
       }
     }
   }
+  #cms {
+    .squares article, .square {
+      a {
+        width: $square-length;
+        height: $square-length;
+      }
+    }
+  }
+  #cms {
+    .squares article, .square {
+      a {
+        display: block;
+        &:hover {
+          img {
+            opacity: 0.7;
+          }
+          background: $overlay-background;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -289,7 +288,7 @@
     width: 50vw;
     height: 50vw;
     a {
-      &:focus {
+      &:active, &:focus {
         h2 {
           top: 265px;
           font-size: $smaller-font-size;
@@ -353,14 +352,6 @@
       }
     }
   }
-  #cms {
-    .squares article, .square {
-      a {
-        width: 50vw;
-        height: 50vw;
-      }
-    }
-  }
   .product-miniature {
     .sticker {
       width: 45px;
@@ -376,6 +367,27 @@
       .sticker {
         width: 35px;
         height: 35px;
+      }
+    }
+  }
+  #cms {
+    .squares article, .square {
+      a {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+  }
+  #cms {
+    .squares article, .square {
+      a {
+        display: block;
+        &:active, &:focus {
+          img {
+            opacity: 0.7;
+          }
+          background: $overlay-background;
+        }
       }
     }
   }

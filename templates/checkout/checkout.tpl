@@ -25,3 +25,7 @@
         </div>
     </section>
 {/block}
+
+{block name="footer"}
+    {include file="checkout/_partials/footer.tpl"}
+{/block}

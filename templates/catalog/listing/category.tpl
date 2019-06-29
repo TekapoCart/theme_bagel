@@ -25,7 +25,7 @@
                 {include file='_partials/breadcrumb.tpl'}
             {/block}
             <h1 class="highlight">{$category.name}</h1>
-            <div class="description highlight">
+            <div class="description">
                 <p>{$category.description nofilter}</p>
             </div>
         </div><!-- end of square intro -->
