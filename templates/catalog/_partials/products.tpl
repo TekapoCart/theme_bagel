@@ -1,5 +1,5 @@
 <div id="js-product-list">
-    <div class="squares">
+    <div class="squares product-miniature">
         {foreach from=$listing.products item="product"}
             {block name='product_miniature'}
                 {include file='catalog/_partials/miniatures/product.tpl' product=$product}

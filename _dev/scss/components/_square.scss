@@ -130,7 +130,6 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
-    line-height: $article-line-height;
     letter-spacing: $article-letter-spacing;
     p {
       padding-left: 16px;
@@ -293,7 +292,7 @@
       h3 {
         color: $primary-color;
       }
-      &:active, &:focus {
+      &:focus {
         h2 {
           top: 85%;
           font-size: $smaller-font-size;
@@ -387,7 +386,7 @@
     .squares article, .square {
       a {
         display: block;
-        &:active, &:focus {
+        &:focus {
           img {
             opacity: 0.7;
           }
