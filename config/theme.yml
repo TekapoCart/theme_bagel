@@ -5,20 +5,31 @@ version: 1.0.0
 assets:
   use_parent_assets: true
   js:
-    all:
+    index:
       - id: jquery-cycle2
         path: assets/js/jquery.cycle2.js
         priority: 500
         position: bottom
-    index:
       - id: jquery-cycle2-carousel
         path: assets/js/jquery.cycle2.carousel.min.js
-        priority: 500
+        priority: 501
+        attribute: bottom
+      - id: js-swiped-events
+        path: assets/js/swiped-events.min.js
+        priority: 502
+        position: bottom
+      - id: js-index
+        path: assets/js/index.js
+        priority: 503
         attribute: bottom
     product:
-      - id: product-custom
-        path: assets/js/product.js
+      - id: js-swiped-events
+        path: assets/js/swiped-events.min.js
         priority: 500
+        position: bottom
+      - id: js-product
+        path: assets/js/product.js
+        priority: 501
         attribute: bottom
 
 global_settings:
@@ -47,6 +58,11 @@ global_settings:
         - ps_imageslider
       displayFooterBefore:
         - ps_emailsubscription
+      displayFooter:
+        - ps_linklist
+      displayFooterProduct:
+        - ps_categoryproducts
+
   image_types:
     small_default:
       width: 500
