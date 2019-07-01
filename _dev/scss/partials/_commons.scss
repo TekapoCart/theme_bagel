@@ -208,12 +208,11 @@ body#checkout section.checkout-step,
 #pagenotfound {
   #layout-left-column-main {
     padding-bottom: 10px;
-    background: #000;
+    background: #333;
   }
   .image-wrapper {
     margin: 0;
     position: relative;
-    background: $primary-color;
     img {
       width: 95%;
       max-width: 375px;
