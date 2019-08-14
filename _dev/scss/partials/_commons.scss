@@ -59,6 +59,11 @@ p, pre {
   padding: 3px 1.5rem;
 }
 
+#_desktop_top_menu,
+#_desktop_top_menu > ul > li {
+  display: block;
+}
+
 #_desktop_top_menu .top-menu .current > a {
   color: inherit;
 }
@@ -206,9 +211,16 @@ body#checkout section.checkout-step,
 }
 
 #pagenotfound {
+  background: #333;
+  #nav,
+  #right-bar,
+  #right-bar .block-social li,
+  #footer,
+  #footer .back-top span .material-icons {
+    background-color: #333;
+  }
   #layout-left-column-main {
     padding-bottom: 10px;
-    background: #333;
   }
   .image-wrapper {
     margin: 0;
