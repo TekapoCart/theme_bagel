@@ -3,12 +3,12 @@
         {if strlen($product.sticker) > 0}<div class="sticker" style="background-image: url('/img/cms/sticker/{$product.sticker}');"></div>{/if}
         {if isset($product_id) && $product_id == $product.id}
             <h3>{$product.name|truncate:70:'...'}</h3>
-            <img src="{$product.cover.bySize.home_default.url}" style="padding: 25px;">
+            <img src="{$product.cover.bySize.home_default.url}" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:70:'...'}{/if}" style="padding: 25px;">
             <div class="overlay on"><span>more</span></div>
         {else}
             <a href="{$product.url}">
                 <h3>{$product.name|truncate:70:'...'}</h3>
-                <img src="{$product.cover.bySize.home_default.url}" style="padding: 25px;">
+                <img src="{$product.cover.bySize.home_default.url}" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:70:'...'}{/if}" style="padding: 25px;">
                 <div class="overlay"><span>more</span></div>
             </a>
         {/if}
