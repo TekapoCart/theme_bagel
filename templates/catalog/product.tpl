@@ -22,7 +22,7 @@
 {/block}
 
 {block name='content'}
-    <div itemscope itemtype="https://schema.org/Product">
+    <div itemscope itemtype="https://schema.org/Product" itemid="{$product.url}">
         <meta itemprop="url" content="{$product.url}">
 
         <div class="square intro dark">
@@ -136,4 +136,6 @@
 
         <div class="clearfix"></div>
     </div>
+    
+    <div id="product_embedded_attributes" data-product="{$product.embedded_attributes|json_encode}" style="visibility: hidden"></div>
 {/block}
