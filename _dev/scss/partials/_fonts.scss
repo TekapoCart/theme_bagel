@@ -1,14 +1,17 @@
 @font-face {
   font-family: MyFont;
   src: url(../fonts/EuclidFlex-Regular.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: MyFontBold;
   src: url(../fonts/EuclidFlex-Bold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: MyFontThin;
   src: url(../fonts/EuclidFlex-Light.otf);
+  font-display: swap;
 }
