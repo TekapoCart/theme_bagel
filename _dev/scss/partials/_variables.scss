@@ -48,6 +48,8 @@ $social-icon-color: #cfcfcf;
 
 /* link color */
 $primary-link-color: #000;
+$primary-link-hover: $palette-color;
+
 $primary-hover-color: $palette-color;
 $primary-disabled-hover-color: #7a7a7a;
 $nav-hover-color: $palette-color;
@@ -55,6 +57,10 @@ $icon-hover-color: $palette-color;
 $footer-link-color: #555;
 
 /* background color */
+$primary-background-color: #000;
+$primary-background-hover: $palette-color;
+$primary-background-disabled-hover: #7a7a7a;
+
 $primary-background: #fff;
 $nav-background: #fff;
 $overlay-background: $palette-background;

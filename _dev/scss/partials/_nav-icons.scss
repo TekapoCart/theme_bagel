@@ -52,6 +52,9 @@
         padding: 7px;
         display: inline-block;
         position: relative;
+        .text {
+          display: none;
+        }
         &:before {
           @include hover-effect-before;
           top: $square-unit-length;

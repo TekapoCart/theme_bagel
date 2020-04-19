@@ -1,7 +1,7 @@
 parent: simplicity
 name: theme_bauhaus
 display_name: theme bauhaus
-version: 1.0.0
+version: 1.0.1
 assets:
   use_parent_assets: true
   js:
