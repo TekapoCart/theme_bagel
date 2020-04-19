@@ -337,3 +337,26 @@ body#checkout section.checkout-step,
     }
   }
 }
+
+.notifications {
+  margin-left: $square-length;
+  .container {
+    padding: 0;
+  }
+}
+
+.alert {
+  margin: 0 auto;
+  padding: 0;
+  height: $square-unit-length;
+  line-height: $square-unit-length;
+}
+
+@media (max-width: 767px) {
+  .notifications {
+    margin-left: 0;
+  }
+  .alert {
+    margin-bottom: $square-unit-length;
+  }
+}

@@ -42,24 +42,27 @@ $article-letter-spacing: 0.91px;
 
 $text-transform: uppercase; /* [lowercase|uppercase|capitalize] */
 
-/* text color */
+/* default variables */
 $primary-color: #000;
-$social-icon-color: #cfcfcf;
 
 /* link color */
 $primary-link-color: #000;
 $primary-link-hover: $palette-color;
 
-$primary-hover-color: $palette-color;
-$primary-disabled-hover-color: #7a7a7a;
-$nav-hover-color: $palette-color;
-$icon-hover-color: $palette-color;
-$footer-link-color: #555;
-
 /* background color */
 $primary-background-color: #000;
 $primary-background-hover: $palette-color;
 $primary-background-disabled-hover: #7a7a7a;
+
+/* ---- */
+
+$primary-hover-color: $palette-color;
+$primary-disabled-hover-color: #7a7a7a;
+
+$nav-hover-color: $palette-color;
+$icon-hover-color: $palette-color;
+$social-icon-color: #cfcfcf;
+$footer-link-color: #555;
 
 $primary-background: #fff;
 $nav-background: #fff;
@@ -67,7 +70,6 @@ $overlay-background: $palette-background;
 $overlay-info-background: rgba(0, 0, 0, 0.7);
 $dark-square-background: #000;
 $footer-background: rgba(242, 242, 242, 0.6);
-
 
 /* z-index */
 $nav-z-index: 100;
