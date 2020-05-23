@@ -192,7 +192,7 @@
     width: initial;
     height: initial;
   }
-  .sticker {
+  .product-sticker {
     top: 0;
     left: 0;
     position: absolute;
@@ -205,7 +205,7 @@
       width: initial;
       height: initial;
     }
-    .sticker {
+    .product-sticker {
       top: 0;
       left: 0;
     }
@@ -213,14 +213,14 @@
 }
 
 .featured-products, #products, .product-miniature {
-  .product-miniature .sticker {
+  .product-miniature .product-sticker {
     z-index: 0;
   }
 }
 
 #home-featuredproducts {
   .product-miniature {
-    .sticker {
+    .product-sticker {
       display: none;
     }
   }
@@ -244,18 +244,18 @@
     }
   }
   .product-miniature {
-    .sticker {
+    .product-sticker {
       width: 72px;
       height: 72px;
     }
   }
   .product-miniature {
-    .sticker {
+    .product-sticker {
       width: 72px;
       height: 72px;
     }
     &.desktop-3, &.desktop-4, &.desktop-5, &.desktop-6 {
-      .sticker {
+      .product-sticker {
         width: 72px;
         height: 72px;
       }
@@ -344,18 +344,18 @@
     }
   }
   .product-miniature {
-    .sticker {
+    .product-sticker {
       width: 45px;
       height: 45px;
     }
     &.mobile-1 {
-      .sticker {
+      .product-sticker {
         width: 72px;
         height: 72px;
       }
     }
     &.mobile-3 {
-      .sticker {
+      .product-sticker {
         width: 35px;
         height: 35px;
       }
